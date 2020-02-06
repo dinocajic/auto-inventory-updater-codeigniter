@@ -8,9 +8,9 @@ class Inbox extends CI_Controller {
 	 */
 	public function index() {
 		$this->load->model('inbox_model');
-		$data['inbox'] =  $this->inbox_model->getInbox();
+		$data['inbox']     =  $this->inbox_model->getInbox();
 		$data['inventory'] = $this->inbox_model->getAttachment();
-		$data['from']  = 'Company <sales@company.com>';
+		$data['from']      = 'Company <sales@company.com>';
 
 
 		$this->load->model("inventory_model");
