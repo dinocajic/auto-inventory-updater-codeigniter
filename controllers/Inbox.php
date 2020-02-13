@@ -12,7 +12,6 @@ class Inbox extends CI_Controller {
 		$data['inventory'] = $this->inbox_model->getAttachment();
 		$data['from']      = 'Company <sales@company.com>';
 
-
 		$this->load->model("inventory_model");
 		$this->inventory_model->updateInventory($data);
 
